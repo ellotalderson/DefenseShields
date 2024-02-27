@@ -93,7 +93,7 @@ namespace DefenseShields
             grossHP = MathHelper.Clamp(grossHP, minHP, maxHP);
             var reducedHP = grossHP * (1f - DsState.State.MaxHpReductionScaler);
             ShieldMaxHp = reducedHP * shieldTypeRatio;
-            Log.Line($"{minHP} - {maxHP}");
+
             var bonus = 0f;
             if (DsState.State.CapModifier < 1)
             {
